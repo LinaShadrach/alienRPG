@@ -16,5 +16,12 @@ namespace basicRPG.Models
         public virtual ApplicationUser AppUser { get; set; }
         public virtual Location Location { get; set; }
         public virtual List<PlayerInventory> PlayerInventory { get; set; }
+        public Player()
+        {
+        }
+        public Player(string name)
+        {
+            Name = name;
+        }
     }
 }
