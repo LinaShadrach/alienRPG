@@ -38,7 +38,6 @@ namespace basicRPG.Controllers
         public async Task<IActionResult> Register(RegisterViewModel model)
         {
             ApplicationUser user = new ApplicationUser { UserName = model.Email, Email = model.Email };
-            Debug.WriteLine(user.UserName + "*************************");
 
             IdentityResult result = await _userManager.CreateAsync(user, model.Password);
             if (result.Succeeded)
@@ -59,7 +58,6 @@ namespace basicRPG.Controllers
         [HttpPost]
         public async Task<IActionResult> RegisterLogin(ApplicationUser user, string password)
         {
-            Debug.WriteLine(user.Id + "RegisterLogin*************************");
 
             Microsoft.AspNetCore.Identity.SignInResult result = await _signInManager.PasswordSignInAsync(user.Email, password, isPersistent: true, lockoutOnFailure: false);
             if (result.Succeeded)

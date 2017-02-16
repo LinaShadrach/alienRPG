@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 using basicRPG.Models;
 using Microsoft.AspNetCore.Identity;
 using System.Security.Claims;
+using System.Diagnostics;
 
 // For more information on enabling MVC for empty projects, visit http://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -23,18 +24,22 @@ namespace basicRPG.Controllers
             _signInManager = signInManager;
         }
         // GET: /<controller>/
-        public IActionResult Create(string name)
+        public IActionResult Create(string id)
         {
-            //ApplicationUser user = db.Users.FirstOrDefault(u=>u.UserName ==name);
-            string id = this.User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
-            ViewBag.UserId = id;
+            Debug.WriteLine(id);
+
+            ApplicationUser user = db.Users.FirstOrDefault(u=>u.UserName == id);
+            //string id = this.User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+            ViewBag.UserId = user.Id;
+            Debug.WriteLine(user.Id);
             return View();
         }
         [HttpPost]
         public IActionResult Create(Player player, string userId)
         {
             Player newPlayer = new Player(player.Name);
-            //newPlayer.UserId = userId;
+            newPlayer.UserId = userId;
+            Debug.WriteLine("create********post********"+userId);
             //player.LocationId = 1;
             db.Add(newPlayer);
             db.SaveChanges();

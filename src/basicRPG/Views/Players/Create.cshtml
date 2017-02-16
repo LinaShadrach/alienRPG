@@ -4,7 +4,7 @@
 @model basicRPG.Models.Player
 @using (Html.BeginForm())
 {
-    <input type="hidden" value="ViewBag.UserId" name="userId"/>
+    <input type="hidden" value="@ViewBag.UserId" name="userId"/>
     @Html.LabelFor(model => model.Name)
     @Html.TextBoxFor(model => model.Name)
 

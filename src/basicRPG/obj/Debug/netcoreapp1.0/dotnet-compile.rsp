@@ -1,5 +1,5 @@
---temp-output:C:\Users\epicodus\Documents\Visual Studio 2015\Projects\basicRPG\src\basicRPG\obj\Debug\netcoreapp1.0\
---out:C:\Users\epicodus\Documents\Visual Studio 2015\Projects\basicRPG\src\basicRPG\bin\Debug\netcoreapp1.0\basicRPG.dll
+--temp-output:C:\Users\epicodus\Desktop\alienRPG\src\basicRPG\obj\Debug\netcoreapp1.0\
+--out:C:\Users\epicodus\Desktop\alienRPG\src\basicRPG\bin\Debug\netcoreapp1.0\basicRPG.dll
 --define:DEBUG
 --define:TRACE
 --define:NETCOREAPP1_0
@@ -199,29 +199,29 @@
 --reference:C:\Users\epicodus\.nuget\packages\System.Threading.Timer\4.0.1\ref\netstandard1.2\System.Threading.Timer.dll
 --reference:C:\Users\epicodus\.nuget\packages\System.Xml.ReaderWriter\4.0.11\ref\netstandard1.3\System.Xml.ReaderWriter.dll
 --reference:C:\Users\epicodus\.nuget\packages\System.Xml.XDocument\4.0.11\ref\netstandard1.3\System.Xml.XDocument.dll
---resource:"C:\Users\epicodus\Documents\Visual Studio 2015\Projects\basicRPG\src\basicRPG\obj\Debug\netcoreapp1.0\basicRPGdotnet-compile.deps.json",basicRPG.deps.json
-C:\Users\epicodus\Documents\Visual Studio 2015\Projects\basicRPG\src\basicRPG\Program.cs
-C:\Users\epicodus\Documents\Visual Studio 2015\Projects\basicRPG\src\basicRPG\RegisterViewModel.cs
-C:\Users\epicodus\Documents\Visual Studio 2015\Projects\basicRPG\src\basicRPG\Startup.cs
-C:\Users\epicodus\Documents\Visual Studio 2015\Projects\basicRPG\src\basicRPG\Controllers\AccountController.cs
-C:\Users\epicodus\Documents\Visual Studio 2015\Projects\basicRPG\src\basicRPG\Controllers\HomeController.cs
-C:\Users\epicodus\Documents\Visual Studio 2015\Projects\basicRPG\src\basicRPG\Controllers\PlayersController.cs
-C:\Users\epicodus\Documents\Visual Studio 2015\Projects\basicRPG\src\basicRPG\Migrations\20170215190657_Initial.cs
-C:\Users\epicodus\Documents\Visual Studio 2015\Projects\basicRPG\src\basicRPG\Migrations\20170215190657_Initial.Designer.cs
-C:\Users\epicodus\Documents\Visual Studio 2015\Projects\basicRPG\src\basicRPG\Migrations\20170215191907_AddUser.cs
-C:\Users\epicodus\Documents\Visual Studio 2015\Projects\basicRPG\src\basicRPG\Migrations\20170215191907_AddUser.Designer.cs
-C:\Users\epicodus\Documents\Visual Studio 2015\Projects\basicRPG\src\basicRPG\Migrations\20170215192317_PlayerUser.cs
-C:\Users\epicodus\Documents\Visual Studio 2015\Projects\basicRPG\src\basicRPG\Migrations\20170215192317_PlayerUser.Designer.cs
-C:\Users\epicodus\Documents\Visual Studio 2015\Projects\basicRPG\src\basicRPG\Migrations\20170215234549_UserPlayerForeignKey.cs
-C:\Users\epicodus\Documents\Visual Studio 2015\Projects\basicRPG\src\basicRPG\Migrations\20170215234549_UserPlayerForeignKey.Designer.cs
-C:\Users\epicodus\Documents\Visual Studio 2015\Projects\basicRPG\src\basicRPG\Migrations\BasicRPGDbContextModelSnapshot.cs
-C:\Users\epicodus\Documents\Visual Studio 2015\Projects\basicRPG\src\basicRPG\Models\ApplicationUser.cs
-C:\Users\epicodus\Documents\Visual Studio 2015\Projects\basicRPG\src\basicRPG\Models\BasicRPGDbContext.cs
-C:\Users\epicodus\Documents\Visual Studio 2015\Projects\basicRPG\src\basicRPG\Models\Foe.cs
-C:\Users\epicodus\Documents\Visual Studio 2015\Projects\basicRPG\src\basicRPG\Models\Item.cs
-C:\Users\epicodus\Documents\Visual Studio 2015\Projects\basicRPG\src\basicRPG\Models\Location.cs
-C:\Users\epicodus\Documents\Visual Studio 2015\Projects\basicRPG\src\basicRPG\Models\NPCInventory.cs
-C:\Users\epicodus\Documents\Visual Studio 2015\Projects\basicRPG\src\basicRPG\Models\Player.cs
-C:\Users\epicodus\Documents\Visual Studio 2015\Projects\basicRPG\src\basicRPG\Models\PlayerInventory.cs
-C:\Users\epicodus\Documents\Visual Studio 2015\Projects\basicRPG\src\basicRPG\ViewModels\LoginViewModel.cs
-C:\Users\epicodus\Documents\Visual Studio 2015\Projects\basicRPG\src\basicRPG\ViewModels\RegisterViewModel.cs
+--resource:"C:\Users\epicodus\Desktop\alienRPG\src\basicRPG\obj\Debug\netcoreapp1.0\basicRPGdotnet-compile.deps.json",basicRPG.deps.json
+C:\Users\epicodus\Desktop\alienRPG\src\basicRPG\Program.cs
+C:\Users\epicodus\Desktop\alienRPG\src\basicRPG\RegisterViewModel.cs
+C:\Users\epicodus\Desktop\alienRPG\src\basicRPG\Startup.cs
+C:\Users\epicodus\Desktop\alienRPG\src\basicRPG\Controllers\AccountController.cs
+C:\Users\epicodus\Desktop\alienRPG\src\basicRPG\Controllers\HomeController.cs
+C:\Users\epicodus\Desktop\alienRPG\src\basicRPG\Controllers\PlayersController.cs
+C:\Users\epicodus\Desktop\alienRPG\src\basicRPG\Migrations\20170215190657_Initial.cs
+C:\Users\epicodus\Desktop\alienRPG\src\basicRPG\Migrations\20170215190657_Initial.Designer.cs
+C:\Users\epicodus\Desktop\alienRPG\src\basicRPG\Migrations\20170215191907_AddUser.cs
+C:\Users\epicodus\Desktop\alienRPG\src\basicRPG\Migrations\20170215191907_AddUser.Designer.cs
+C:\Users\epicodus\Desktop\alienRPG\src\basicRPG\Migrations\20170215192317_PlayerUser.cs
+C:\Users\epicodus\Desktop\alienRPG\src\basicRPG\Migrations\20170215192317_PlayerUser.Designer.cs
+C:\Users\epicodus\Desktop\alienRPG\src\basicRPG\Migrations\20170215234549_UserPlayerForeignKey.cs
+C:\Users\epicodus\Desktop\alienRPG\src\basicRPG\Migrations\20170215234549_UserPlayerForeignKey.Designer.cs
+C:\Users\epicodus\Desktop\alienRPG\src\basicRPG\Migrations\BasicRPGDbContextModelSnapshot.cs
+C:\Users\epicodus\Desktop\alienRPG\src\basicRPG\Models\ApplicationUser.cs
+C:\Users\epicodus\Desktop\alienRPG\src\basicRPG\Models\BasicRPGDbContext.cs
+C:\Users\epicodus\Desktop\alienRPG\src\basicRPG\Models\Foe.cs
+C:\Users\epicodus\Desktop\alienRPG\src\basicRPG\Models\Item.cs
+C:\Users\epicodus\Desktop\alienRPG\src\basicRPG\Models\Location.cs
+C:\Users\epicodus\Desktop\alienRPG\src\basicRPG\Models\NPCInventory.cs
+C:\Users\epicodus\Desktop\alienRPG\src\basicRPG\Models\Player.cs
+C:\Users\epicodus\Desktop\alienRPG\src\basicRPG\Models\PlayerInventory.cs
+C:\Users\epicodus\Desktop\alienRPG\src\basicRPG\ViewModels\LoginViewModel.cs
+C:\Users\epicodus\Desktop\alienRPG\src\basicRPG\ViewModels\RegisterViewModel.cs
