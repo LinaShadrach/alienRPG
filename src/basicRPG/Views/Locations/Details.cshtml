@@ -1,0 +1,17 @@
+﻿@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@model basicRPG.Models.Location
+
+<div class="container">
+    <h1>@ViewBag.player.Name</h1>
+    <hr />
+    <h3>You are in @Model.Name</h3>
+    <p>Your surroundings: @Model.Description</p>
+    @using (Html.BeginForm())
+    {
+        <input type="hidden" value="@Model.Id" name="locationId"/>
+        <button type="submit" class="btn">Go to next location</button>
+    }
+</div>

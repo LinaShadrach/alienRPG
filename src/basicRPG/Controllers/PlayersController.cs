@@ -29,7 +29,6 @@ namespace basicRPG.Controllers
             Debug.WriteLine(id);
 
             ApplicationUser user = db.Users.FirstOrDefault(u=>u.UserName == id);
-            //string id = this.User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
             ViewBag.UserId = user.Id;
             Debug.WriteLine(user.Id);
             return View();
@@ -39,11 +38,9 @@ namespace basicRPG.Controllers
         {
             Player newPlayer = new Player(player.Name);
             newPlayer.UserId = userId;
-            Debug.WriteLine("create********post********"+userId);
-            //player.LocationId = 1;
             db.Add(newPlayer);
             db.SaveChanges();
-            return RedirectToAction("Index", "Account");
+            return RedirectToAction("Details", "Locations");
         }
         public IActionResult Edit()
         {

@@ -8,6 +8,7 @@ using basicRPG.ViewModels;
 using Microsoft.AspNetCore.Identity;
 using System.Security.Claims;
 using System.Diagnostics;
+using Microsoft.EntityFrameworkCore;
 
 // For more information on enabling MVC for empty projects, visit http://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -26,6 +27,14 @@ namespace basicRPG.Controllers
         }
         public IActionResult Index()
         {
+            string userId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+            var players = _db.Players.Where(p => p.UserId == userId).Select(p => new { p.Name }).ToList();
+            string name = "";
+            if (players.Count > 0)
+            {
+              name = players[0].Name.ToString();
+            }
+            ViewBag.name = name;
             return View();
         }
 
