@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
+    <link href="~/css/styles.css" type="text/css" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
+    <title>@ViewBag.Title</title>
+</head>
+<body>
+    <nav class="green darken-2">
+        <div class="nav-wrapper">
+            <span class="brand-logo center">@Html.ActionLink("Aliens!", "Index", "Account")</span>
+            <ul class="right">
+                <li>@Html.ActionLink("Go To Game", "Details", "Location")</li>
+                @if (User.Identity.IsAuthenticated)
+                {
+                    <li>@Html.ActionLink($"{User.Identity.Name}'s Account", "Index", "Account")</li>
+
+                }
+                else
+                {
+
+                    <li>@Html.ActionLink("Login", "Index", "Account")</li>
+                }
+
+            </ul>
+            @if (User.Identity.IsAuthenticated)
+            {
+                @using (Html.BeginForm("LogOff", "Account"))
+                {
+                    <input type="submit" class="btn btn-default" value="Log out" />
+                }
+            }
+
+        </div>
+    </nav>
+    
+    <div>
+        @RenderBody()
+    </div>
+</body>
+</html>

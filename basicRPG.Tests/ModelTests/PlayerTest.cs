@@ -13,10 +13,11 @@ namespace basicRPG.Tests
         public void Player_GetName_TestName()
         {
             //Arrange
-            Player player = new Player("Test Name");
-
+            Player player = new Player();
+            
             //Act
-            string name = player.Name;
+            string name = "Test Name";
+            player.Name = name;
 
             //Assert
             Assert.Equal("Test Name", name);

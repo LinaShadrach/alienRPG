@@ -201,15 +201,19 @@
 --reference:C:\Users\epicodus\.nuget\packages\System.Xml.XDocument\4.0.11\ref\netstandard1.3\System.Xml.XDocument.dll
 --resource:"C:\Users\epicodus\Documents\Visual Studio 2015\Projects\basicRPG\src\basicRPG\obj\Debug\netcoreapp1.0\basicRPGdotnet-compile.deps.json",basicRPG.deps.json
 C:\Users\epicodus\Documents\Visual Studio 2015\Projects\basicRPG\src\basicRPG\Program.cs
+C:\Users\epicodus\Documents\Visual Studio 2015\Projects\basicRPG\src\basicRPG\RegisterViewModel.cs
 C:\Users\epicodus\Documents\Visual Studio 2015\Projects\basicRPG\src\basicRPG\Startup.cs
 C:\Users\epicodus\Documents\Visual Studio 2015\Projects\basicRPG\src\basicRPG\Controllers\AccountController.cs
 C:\Users\epicodus\Documents\Visual Studio 2015\Projects\basicRPG\src\basicRPG\Controllers\HomeController.cs
+C:\Users\epicodus\Documents\Visual Studio 2015\Projects\basicRPG\src\basicRPG\Controllers\PlayersController.cs
 C:\Users\epicodus\Documents\Visual Studio 2015\Projects\basicRPG\src\basicRPG\Migrations\20170215190657_Initial.cs
 C:\Users\epicodus\Documents\Visual Studio 2015\Projects\basicRPG\src\basicRPG\Migrations\20170215190657_Initial.Designer.cs
 C:\Users\epicodus\Documents\Visual Studio 2015\Projects\basicRPG\src\basicRPG\Migrations\20170215191907_AddUser.cs
 C:\Users\epicodus\Documents\Visual Studio 2015\Projects\basicRPG\src\basicRPG\Migrations\20170215191907_AddUser.Designer.cs
 C:\Users\epicodus\Documents\Visual Studio 2015\Projects\basicRPG\src\basicRPG\Migrations\20170215192317_PlayerUser.cs
 C:\Users\epicodus\Documents\Visual Studio 2015\Projects\basicRPG\src\basicRPG\Migrations\20170215192317_PlayerUser.Designer.cs
+C:\Users\epicodus\Documents\Visual Studio 2015\Projects\basicRPG\src\basicRPG\Migrations\20170215234549_UserPlayerForeignKey.cs
+C:\Users\epicodus\Documents\Visual Studio 2015\Projects\basicRPG\src\basicRPG\Migrations\20170215234549_UserPlayerForeignKey.Designer.cs
 C:\Users\epicodus\Documents\Visual Studio 2015\Projects\basicRPG\src\basicRPG\Migrations\BasicRPGDbContextModelSnapshot.cs
 C:\Users\epicodus\Documents\Visual Studio 2015\Projects\basicRPG\src\basicRPG\Models\ApplicationUser.cs
 C:\Users\epicodus\Documents\Visual Studio 2015\Projects\basicRPG\src\basicRPG\Models\BasicRPGDbContext.cs
@@ -219,3 +223,5 @@ C:\Users\epicodus\Documents\Visual Studio 2015\Projects\basicRPG\src\basicRPG\Mo
 C:\Users\epicodus\Documents\Visual Studio 2015\Projects\basicRPG\src\basicRPG\Models\NPCInventory.cs
 C:\Users\epicodus\Documents\Visual Studio 2015\Projects\basicRPG\src\basicRPG\Models\Player.cs
 C:\Users\epicodus\Documents\Visual Studio 2015\Projects\basicRPG\src\basicRPG\Models\PlayerInventory.cs
+C:\Users\epicodus\Documents\Visual Studio 2015\Projects\basicRPG\src\basicRPG\ViewModels\LoginViewModel.cs
+C:\Users\epicodus\Documents\Visual Studio 2015\Projects\basicRPG\src\basicRPG\ViewModels\RegisterViewModel.cs

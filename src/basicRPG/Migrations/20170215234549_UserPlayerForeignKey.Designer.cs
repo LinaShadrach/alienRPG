@@ -8,9 +8,10 @@ using basicRPG.Models;
 namespace basicRPG.Migrations
 {
     [DbContext(typeof(BasicRPGDbContext))]
-    partial class BasicRPGDbContextModelSnapshot : ModelSnapshot
+    [Migration("20170215234549_UserPlayerForeignKey")]
+    partial class UserPlayerForeignKey
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
             modelBuilder
                 .HasAnnotation("ProductVersion", "1.0.0-rtm-21431")

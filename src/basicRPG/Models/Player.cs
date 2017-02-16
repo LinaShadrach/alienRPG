@@ -13,7 +13,7 @@ namespace basicRPG.Models
         public int Health { get; set; }
         public int LocationId { get; set; }
         public string UserId { get; set; }
-        public virtual ApplicationUser AppUser { get; set; }
+        public virtual ApplicationUser User { get; set; }
         public virtual Location Location { get; set; }
         public virtual List<PlayerInventory> PlayerInventory { get; set; }
         public Player()
@@ -22,6 +22,9 @@ namespace basicRPG.Models
         public Player(string name)
         {
             Name = name;
+            Image = new byte[0];
+            Health = 100;
+            LocationId = 1;
         }
     }
 }
