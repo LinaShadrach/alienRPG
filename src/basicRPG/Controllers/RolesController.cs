@@ -58,11 +58,13 @@ namespace basicRPG.Controllers
         [ValidateAntiForgeryToken]
         public IActionResult Edit(IdentityRole role)
         {
-                role.NormalizedName = role.Name.ToUpper();
             try
             {
-                db.Entry(role).State = EntityState.Modified;
-                Debug.WriteLine("try"+role.Name);
+                var thisRole = db.Roles.FirstOrDefault(r => r.Id == role.Id);
+                thisRole.Name = role.Name;
+                thisRole.NormalizedName = role.Name.ToUpper();
+                db.Entry(thisRole).State = EntityState.Modified;
+                Debug.WriteLine("try"+thisRole.Name);
 
                 db.SaveChanges();
 
