@@ -15,22 +15,13 @@ namespace basicRPG.Controllers
     public class PlayersController : Controller
     {
         private BasicRPGDbContext db = new BasicRPGDbContext();
-        private readonly UserManager<ApplicationUser> _userManager;
-        private readonly SignInManager<ApplicationUser> _signInManager;
 
-        public PlayersController(UserManager<ApplicationUser> userManager, SignInManager<ApplicationUser> signInManager)
-        {
-            _userManager = userManager;
-            _signInManager = signInManager;
-        }
         // GET: /<controller>/
         public IActionResult Create(string id)
         {
-            Debug.WriteLine(id);
 
             ApplicationUser user = db.Users.FirstOrDefault(u=>u.UserName == id);
             ViewBag.UserId = user.Id;
-            Debug.WriteLine(user.Id);
             return View();
         }
         [HttpPost]
@@ -42,9 +33,10 @@ namespace basicRPG.Controllers
             db.SaveChanges();
             return RedirectToAction("Details", "Locations");
         }
-        public IActionResult Edit()
+        public IActionResult Edit(int id)
         {
-            return View(db.Players.ToList());
+            Player player = db.Players.FirstOrDefault(p => p.Id == id);
+            return View(player);
         }
 
     }
