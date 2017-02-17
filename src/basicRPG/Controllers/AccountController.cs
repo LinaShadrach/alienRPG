@@ -88,7 +88,7 @@ namespace basicRPG.Controllers
             {
                 string userId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
                 Player userPlayer = _db.Players.FirstOrDefault(p => p.UserId == userId);
-                return RedirectToAction("Edit", "Player", new { id = userPlayer.Id });
+                return RedirectToAction("Details","Locations");
             }
             else
             {
